@@ -3,7 +3,7 @@ package com.ismael.calculadora;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-public class HelloController {
+public class CalculadoraController {
     @FXML
     private Label welcomeText;
 
