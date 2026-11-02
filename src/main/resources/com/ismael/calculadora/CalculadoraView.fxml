@@ -9,13 +9,12 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ismael.calculadora.CalculadoraController">
    <children>
       <Separator prefHeight="47.0" prefWidth="343.0" />
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <Label fx:id="window" contentDisplay="RIGHT" prefHeight="114.0" prefWidth="343.0" style="-fx-background-color: #c0c0c0;;">
+            <Label fx:id="window" contentDisplay="RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="114.0" prefWidth="343.0" style="-fx-background-color: #c0c0c0;;">
                <font>
                   <Font size="24.0" />
                </font>
@@ -27,7 +26,7 @@
             <ListView fx:id="listOperations" nodeOrientation="LEFT_TO_RIGHT" prefHeight="133.0" prefWidth="343.0" />
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="200.0">
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="82.0" prefWidth="326.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handleDelete" prefHeight="60.0" prefWidth="64.0" text="Delete">
                <HBox.margin>
@@ -49,19 +48,19 @@
       </HBox>
       <HBox prefHeight="100.0" prefWidth="200.0">
          <children>
-            <HBox prefHeight="100.0" prefWidth="383.0">
+            <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="383.0">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handle7" prefHeight="47.0" prefWidth="47.0" text="7">
+                  <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="7">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#handle8" prefHeight="47.0" prefWidth="47.0" text="8">
+                  <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="8">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" onAction="#handle9" prefHeight="47.0" prefWidth="47.0" text="9">
+                  <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="9">
                      <HBox.margin>
                         <Insets left="20.0" right="20.0" />
                      </HBox.margin>
@@ -71,19 +70,19 @@
             </HBox>
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="383.0">
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="383.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#handle4" prefHeight="47.0" prefWidth="47.0" text="4">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="4">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handle5" prefHeight="47.0" prefWidth="47.0" text="5">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="5">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handle6" prefHeight="47.0" prefWidth="47.0" text="6">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="6">
                <HBox.margin>
                   <Insets left="20.0" right="20.0" />
                </HBox.margin>
@@ -91,19 +90,19 @@
             <Button mnemonicParsing="false" onAction="#handleRestar" prefHeight="47.0" prefWidth="47.0" text="-" />
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="383.0">
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="383.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#handle1" prefHeight="47.0" prefWidth="47.0" text="1">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="1">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handle2" prefHeight="47.0" prefWidth="47.0" text="2">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="2">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handle3" prefHeight="47.0" prefWidth="47.0" text="3">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="3">
                <HBox.margin>
                   <Insets left="20.0" right="20.0" />
                </HBox.margin>
@@ -111,14 +110,14 @@
             <Button mnemonicParsing="false" onAction="#handleSumar" prefHeight="47.0" prefWidth="47.0" text="+" />
          </children>
       </HBox>
-      <HBox prefHeight="100.0" prefWidth="383.0">
+      <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="383.0">
          <children>
             <Button mnemonicParsing="false" onAction="#handleCambiarSigno" prefHeight="47.0" prefWidth="47.0" text="+/-">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#handle0" prefHeight="47.0" prefWidth="47.0" text="0">
+            <Button mnemonicParsing="false" onAction="#onNumeroClick" prefHeight="47.0" prefWidth="47.0" text="0">
                <HBox.margin>
                   <Insets left="20.0" />
                </HBox.margin>
